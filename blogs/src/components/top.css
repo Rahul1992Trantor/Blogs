@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+
+/*header span */
+
+h1 span{font-weight:bold;font-family:'Times New Roman', Times, serif;}
+/*about content */
+section{width:100%; max-width:1200px; margin:0px auto; display:table; position:relative;font-family: "Times New Roman", Georgia, Serif;}
+/*About and Portfolio*/
+.content{display:table; margin-bottom:45px; margin-top:45px; width:900px;font-family: "Times New Roman", Georgia, Serif;}
+
+.content h2{font-size:18px; font-weight:500; color:#d42727; border-bottom:1px solid #0accd3; display:table; padding-bottom:10px; margin-bottom:10px;}
+.content p{font-size:16px; line-height:22px; color:#6419dd; text-align:justify;font-family: "Times New Roman", Georgia, Serif;}
+
+/*toggle*/
+
+
+/**/
+header.h1{ text-align:center; 
+  font-size:400%;
+  padding-top:60px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;}
+
+header{
+  padding: 20px;
+  text-align: center;
+  background: #83d5e4;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+ 
+}
+/**/
+
+  /**/
+
+/*responsive*/
+
+@media only screen and (max-width: 980px) {
+  .content{width:90%;}
+  }
+  
+  @media only screen and (max-width: 568px) {
+  h1{padding:25px 0px;}
+  h1 span{display:block;}
+  }
+  
+  @media only screen and (max-width: 480px) {
+  section {max-width: 90%;}
+  }
+  
+  @media only screen and (max-width: 360px) {
+  h1{font-size:20px;}
+  label{padding:5px 0px;}
+  #logo{font-size: 20px;}
+  .bar{top:47px;}
+  }
+  
+  @media only screen and (max-width: 320px) {
+  h1 {padding: 20px 0px;}
+  }

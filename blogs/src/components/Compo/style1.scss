@@ -1,0 +1,107 @@
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  height: 70%;
+  margin: 30px auto;
+  padding: 15px 10px;
+
+  }
+  .pagination > .active > a{
+    background-color: #e26dc9 ;
+    border-color: #0a0c0c ;
+    color: #fff;
+  }
+  .pagination > li > a{
+    border: 1px solid #f3238b ;
+    padding: 5px 10px;
+    outline: none;
+    cursor: pointer;
+  }
+  .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+    background-color: #dd0f0f ;
+    border-color: #05290b;
+    outline: none ;
+  }
+  .pagination > li > a, .pagination > li > span{
+    color: #080808
+  }
+  .pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:last-child > a, .pagination > li:last-child > span{
+    border-radius: unset
+  }
+
+.siteTitle {
+  display: block;
+  font-weight: 900px;
+  font-size: 30px;
+  margin: 20px auto 0; 
+
+}
+
+.list1{
+list-style-type: disc;
+margin-left:20px ;
+}
+ 
+/*   Container css*/
+.mvBack{
+  background: #5cf;
+  opacity:.9999;
+  padding:4%;
+
+}
+.mv p{
+  font-size:1.45em;
+}
+.mvWrap{
+  position:relative;
+  background: #F5F5F5;
+  padding:3%;
+  border-radius:4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  border-top:1px solid #fff;
+  width:100%;
+}
+
+.mvWrap:after{
+  content:" ";
+  display:block;
+  position:absolute;
+  right:0px;
+  bottom:35px;
+  height:0px;
+  background:rgba(0,0,0,0);  
+  box-shadow: -30px 20px 5px 15px rgba(0,0,0,0.3);
+  transform: rotate(3deg);
+  z-index:-1;
+  width:80%
+}
+
+/*left side*/
+.mvWrap:before{
+  content:" ";
+  width:80%;
+  display:block;
+  position:absolute;
+  left:0px;
+  bottom:35px;
+  height:0px;
+  background:rgba(0,0,0,0);
+  box-shadow: 30px 20px 5px 15px rgba(0,0,0,0.3);
+  transform: rotate(-3deg);
+  z-index:-1;
+}
+
+
+.mv{
+  position:relative;
+}
+/**/
+ @media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+ }
